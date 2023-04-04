@@ -1,23 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
+import Productlist from './components/ProductList';
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Productlist products={[{no:"1",name:"Phone", price:"21,000", imageUrl:"https://s3.ap-south-1.amazonaws.com/stickon-web-mobile/production-2/products/base_images/y73-newsfCeLDyEvBu7c1sJ.png"},{no:"2",name:"Car", price:"70,00,000", imageUrl:"https://imgd.aeplcdn.com/0x0/n/cw/ec/93821/exterior-right-front-three-quarter.jpeg"}]}/>
     </div>
   );
 }
